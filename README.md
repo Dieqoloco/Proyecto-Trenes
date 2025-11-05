@@ -12,7 +12,7 @@ El simulador de trenes, estara orientado a resolver las necesidades de las empre
 
 ## Descripción de los indicadores
 
-__Aqui hay que decir que hacen los indicadores__
+__Aqui hay que decir que hacen los indicadores de manera clara y consiza__ 
 
 ## Descripcion de la persistencia de datos
 
