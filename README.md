@@ -5,6 +5,10 @@
 El simulador de trenes, estara orientado a resolver las necesidades de las empresas ferroviarias, para planificar las rutas y gestionar los trenes, y tener una visualización general de todo lo que esta pasando en el momento, ademas de resolver los eventos que sucedan durante la simulación.
 
 ## Integrantes
+<<<<<<< HEAD
+=======
+
+>>>>>>> 44d66d359a0f599473b803e05e08d9b4d2a66d3d
 * Diego Alvarado
 * Diego Fernández
 * Emilia Barahona
