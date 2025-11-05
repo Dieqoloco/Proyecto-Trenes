@@ -9,6 +9,8 @@ def main():
     ventana.geometry(escala_ventana)
     ventana.title(titulo_ventana)
 
+    #Aqui agregar algo
+
     #Creación del bucle
     tk.mainloop()
 if __name__ == "__main__":
