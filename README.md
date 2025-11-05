@@ -4,6 +4,8 @@ El simulador de trenes, estara orientado a resolver las necesidades de las empre
 
 ## Integrantes
 * Diego Fernández
+* Diego Alvarado
+
 
 ## posicionamiento
 * posicionarze dentro de la carpeta **Nombre de la carpeta** 
