@@ -8,6 +8,11 @@ Por esto, la División de Desarrollo Informático busca crear un Sistema de Simu
 * Diego Fernández
 * Emilia Barahona
 
+Como simulación escogimos dos indicadores loss cuales son: 
+-Estación más cercana:
+Indica cuál es la estación que se encuentra a menor distancia dentro del sistema. Sirve para identificar conexiones rápidas entre estaciones y facilitar la planificación de rutas.
+-Mayor cantidad de pasajeros:
+Muestra cuál estación o tren tiene más personas transportadas. Este indicador ayuda a entender dónde hay más movimiento de usuarios y a mejorar la organización del servicio.
 ## posicionamiento
 * posicionarze dentro de la carpeta **Nombre de la carpeta** 
 *
