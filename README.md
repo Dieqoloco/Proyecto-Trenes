@@ -28,6 +28,6 @@ Existen 2 situaciones de escrituras y lectura de datos, la lectura estática, en
 
 ## Como empezar
 
-* 1.- Posicionate dentro de la carpeta PROYECTO-TRENES (o en la que se hallan guardado todos los archivos de la misma).
+* 1.- Posicionate dentro de la carpeta PROYECTO-TRENES (o en la que se hayan guardado todos los archivos de la misma).
 * 2.- Posicionate dentro del archivo programa.py.
 * 3.- Apreta CTRL + F5.
