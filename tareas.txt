@@ -1,2 +1,10 @@
-Asignación de tareas
-1.
+Asignación de recursos humanos
+
+1.- carpeta interfaz: Fernández D
+    Encargado de hacer las funciones para desplegar las ventanas y los botones para ello
+
+2.- carpeta modelos: Barahona E, Muñoz D
+    Encargados de generar las entidades necesarias junto con sus datos para que la simulación los interprete, ej: trenes, vias, rutas, personas
+
+3.- carpeta logica: Alvarado D, Carrillo A, Fernández D
+    Encargados de crear las funciones de guardado y carga junto con la clase de Hora_actual
