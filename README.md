@@ -16,18 +16,11 @@ Por esto, la División de Desarrollo Informático busca crear un Sistema de Simu
 * Diego Fernández
 * Emilia Barahona
 
-<<<<<<< HEAD
-## posicionamiento
-* posicionarze dentro de la carpeta **Nombre de la carpeta** 
-*
-=======
 ## Descripción de los indicadores
 
 Como simulación escogimos dos indicadores los cuales son: 
--Estación más cercana:
-Indica cuál es la estación que se encuentra a menor distancia dentro del sistema. Sirve para identificar conexiones rápidas entre estaciones y facilitar la planificación de rutas.
--Mayor cantidad de pasajeros:
-Muestra cuál estación o tren tiene más personas transportadas. Este indicador ayuda a entender dónde hay más movimiento de usuarios y a mejorar la organización del servicio.
+-Estación más cercana: Indica cuál es la estación que se encuentra a menor distancia dentro del sistema. Sirve para identificar conexiones rápidas entre estaciones y facilitar la planificación de rutas.
+-Mayor cantidad de pasajeros: Muestra cuál estación o tren tiene más personas transportadas. Este indicador ayuda a entender dónde hay más movimiento de usuarios y a mejorar la organización del servicio.
 
 ## Descripcion de la persistencia de datos
 
@@ -38,5 +31,3 @@ Existen 2 situaciones de escrituras y lectura de datos, la lectura estática, en
 * 1.- Posicionate dentro de la carpeta PROYECTO-TRENES (o en la que se hallan guardado todos los archivos de la misma).
 * 2.- Posicionate dentro del archivo programa.py.
 * 3.- Apreta CTRL + F5.
->>>>>>> 4423c36364fa10ee37f0f87015465f83fd5009a9
-
