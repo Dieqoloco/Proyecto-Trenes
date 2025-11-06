@@ -1,3 +1,10 @@
+████████╗██████╗ ███████╗███╗   ██╗███████╗███████╗
+╚══██╔══╝██╔══██╗██╔════╝████╗  ██║██╔════╝██╔════╝
+   ██║   ██████╔╝█████╗  ██╔██╗ ██║█████╗  ███████╗
+   ██║   ██╔══██╗██╔══╝  ██║╚██╗██║██╔══╝  ╚════██║
+   ██║   ██║  ██║███████╗██║ ╚████║███████╗███████║
+   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚══════╝╚══════╝
+                                                   
 # Proyecto-Trenes
 
 ## Descripción
@@ -5,7 +12,6 @@ La Empresa de Ferrocarriles del Estado de Chile está realizando una importante 
 Por esto, la División de Desarrollo Informático busca crear un Sistema de Simulación de Tráfico Ferroviario, por ello creamos una propuesta que consiste en desarrollar una aplicación que permita a los usuarios visualizar y crear simulaciones de trenes, incorporando elementos como estaciones, rutas, velocidades y capacidad de pasajeros. El sistema será modular y podrá ampliarse con nuevas funciones en el futuro, ayudando a mejorar la eficiencia y la toma de decisiones dentro de EFE.
 
 ## Integrantes
-
 * Diego Alvarado
 * Diego Fernández
 * Emilia Barahona
@@ -25,7 +31,7 @@ Muestra cuál estación o tren tiene más personas transportadas. Este indicador
 
 ## Descripcion de la persistencia de datos
 
-__Aqui hay que aclarar como y donde se guardan los datos persistentes__
+Existen 2 situaciones de escrituras y lectura de datos, la lectura estática, en la que se incluyen los archivos necesarios para iniciar la simulación que se guardaran en archivos CSV para el acceso detallado, mientras que los archivos dinámicos que son los que se actualizan durante la simulación se guardaran en archivos txt, todos los archivos se guardaran en una carpeta, se guardaran por archivos cada uno con su respectivo uso ej: estaciones.csv; eventos.txt; etc. 
 
 ## Como empezar
 
