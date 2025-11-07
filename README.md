@@ -15,6 +15,7 @@ Por esto, la División de Desarrollo Informático busca crear un Sistema de Simu
 * Diego Alvarado
 * Diego Fernández
 * Emilia Barahona
+* Angela Carrillo
 
 ## Descripción de los indicadores
 
