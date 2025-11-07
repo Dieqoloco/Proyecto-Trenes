@@ -7,4 +7,4 @@ Asignación de recursos humanos
     Encargados de generar las entidades necesarias junto con sus datos para que la simulación los interprete, ej: trenes, vias, rutas, personas
 
 3.- carpeta logica: Alvarado D, Carrillo A, Fernández D
-    Encargados de crear las funciones de guardado y carga junto con la clase de Hora_actual
+    Encargados de crear las funciones de guardado y carga junto con la clase de Hora_actual.
