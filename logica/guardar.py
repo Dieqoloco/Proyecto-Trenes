@@ -11,7 +11,7 @@ def crear_carpeta(nombre:str) -> None:
     # buscara la carpeta simulaciones y considerara la carpeta con nombre
     carpeta_destino = os.path.join("simulaciones", nombre)
 
-    # el bucl evitara errores por nombres duplicados
+    # el bucle evitara errores por nombres duplicados
     contador = 0
     while os.path.exists(carpeta_destino):
         carpeta_destino = os.path.join("simulaciones", nombre + f"({contador})")
