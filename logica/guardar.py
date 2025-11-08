@@ -2,7 +2,7 @@ import tkinter as tk
 import os
 
 def crear_carpeta(nombre:str) -> None:
-    """ Esta funcion servira para crear las carpetas con los datos de las simulaciones """
+    """ Esta función servira para crear las carpetas con los datos de las simulaciones """
 
     "Si la carpeta no tiene nombre se guardara como 'Nueva simulación'"
     if nombre == "":
