@@ -11,7 +11,7 @@ def carpetas_en() -> list:
     #definimos la ruta
     ruta = "simulaciones"
 
-    #acemos el bucle para que busque los nombres y los agrege a la lista
+    #Hacemos el bucle para que busque los nombres y los agrege a la lista
     for carpeta in os.listdir(ruta):
         if os.path.isdir(os.path.join(ruta, carpeta)):
             carpetas.append(carpeta)
@@ -41,16 +41,25 @@ def crear_carpeta(nombre:str) -> None:
     """ Esta función servira para crear las carpetas con los datos de las simulaciones """
     "Si la carpeta no tiene nombre se guardara como 'Nueva simulación'"
     try:
-        if nombre == "":
+        if not nombre.strip(): 
             nombre = "Nueva_Simulacion"
+        
+        #Crea la carpeta principal si no exixte
+        os.makedirs("simulaciones", exist_ok=True)
+
         # buscara la carpeta simulaciones y considerara la carpeta con nombre
-        carpeta_destino = os.path.join("simulaciones", nombre) #
+        # genera la ruta base
+        carpeta_destino = os.path.join("simulaciones", nombre) 
         # el bucle evitara errores por nombres duplicados
+
         contador = 0
         while os.path.exists(carpeta_destino):
             carpeta_destino = os.path.join("simulaciones", nombre + f"({contador})") 
             contador += 1
 
         os.makedirs(carpeta_destino)
+        print(f"Carpeta creada: {carpeta_destino}")
+        return carpeta_destino
     except Exception as e:
-            print("Error al guardar la simulación:", e)
+            print(f"Error al crear la carpeta simulacion: {e}")
+            return ""
