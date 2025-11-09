@@ -1,0 +1,1 @@
+color_bg_principal = "#a0a0a0"

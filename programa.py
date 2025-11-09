@@ -1,15 +1,17 @@
 import tkinter as tk
-from tkinter import messagebox, ttk
-from config.configuraciones import escala_ventana,titulo_ventana
+from tkinter import ttk
+from config.configuraciones import titulo_ventana
+from interfaz.interfaz import interfaze, ventana_simulador, ventana_creacion_simulacion, crear_ventanas
 
 def main():
     """Inicia el programa completo"""
     #configuración de la ventana
     ventana = tk.Tk() 
-    ventana.geometry(escala_ventana)
+    ventana.state("zoomed")
     ventana.title(titulo_ventana)
 
-    #Aqui agregar algo
+    #Creamos la interfaz
+    interfaze(ventana)
 
     #Creación del bucle
     tk.mainloop()
