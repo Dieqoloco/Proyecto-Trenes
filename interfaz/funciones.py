@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox as msgbox
 from config.colores import color_bg_principal
 from logica import crear_carpeta
- 
+from logica.tiempo import validar_y_guardar_hora 
     
 
 def crear_ventanas(notebook:ttk.Notebook, funcion) -> None:
@@ -21,15 +21,25 @@ def crear_ventanas(notebook:ttk.Notebook, funcion) -> None:
     notebook.select(nueva_ventana)
 
 
-def guardar_simulacion(nombre:tk.Entry, frame: tk.Frame, tab: ttk.Notebook) -> None:
+def guardar_simulacion(nombre:tk.Entry, frame: tk.Frame, tab: ttk.Notebook,
+                        hora:tk.Entry, minuto:tk.Entry, segundo:tk.Entry) -> None:
+    
     """Esta funcion guardara la nueva simulación"""
 
-    # esta funcion creara la carpeta en la que se guardaran los datos de la simulación
-    contenido = nombre.get()
-    crear_carpeta(contenido)
+    try:
 
-    # al finalizar cerraremos la ventana de creación
-    cerrar_ventana(frame, tab)
+        if not validar_y_guardar_hora(hora,minuto,segundo):
+            msgbox.showerror("Error", "Los valores de tiempo son incorrectos")
+            raise ValueError("Los valores no estan en rango")
+        
+        # esta funcion creara la carpeta en la que se guardaran los datos de la simulación
+        contenido = nombre.get()
+        crear_carpeta(contenido)
+
+        # al finalizar cerraremos la ventana de creación
+        cerrar_ventana(frame, tab)
+    except ValueError:
+        pass
 
 
 def cerrar_ventana(frame:tk.Frame, tab: ttk.Notebook) -> None:

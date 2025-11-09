@@ -20,20 +20,28 @@ def interfaze(ventana:tk.Tk) -> None:
 def ventana_creacion_simulacion(frame:tk.Frame, tabs: ttk.Notebook) -> str:
     """ Esta funcion creara la ventana creadora de simulaciones"""
 
-    #Preguntara el nombre de la simulacion
+    # Preguntara el nombre de la simulacion
     tk.Label(frame, text="Ingrese el nombre de la simulación", bg=color_bg_principal).pack()
-    texto = tk.Entry(frame)
-    texto.pack()
+    nombre = tk.Entry(frame)
+    nombre.pack()
 
-    #Botones
-    #Este boton guardara la simulación
+    # Crearemos 3 espacios para agregar la hora los minutos y los segundos
+    tk.Label(frame, text="Ingrese la hora de inicio (hora/minutos/segundos)", bg=color_bg_principal).pack()
+    hora = tk.Entry(frame, width=10)
+    hora.pack()
+    minutos = tk.Entry(frame, width=10)
+    minutos.pack()
+    segundos = tk.Entry(frame, width=10)
+    segundos.pack()
+
+    # Este boton guardara la simulación
     tk.Button(frame, text="Guardar", 
-              command=lambda: guardar_simulacion(texto, frame, tabs)).pack()
+              command=lambda: guardar_simulacion(nombre, frame, tabs, hora, minutos, segundos)).pack()   
     
-    #este boton cancelara el proceso y cerrara la ventana
+    # este boton cancelara el proceso y cerrara la ventana
     tk.Button(frame, text="Cancelar", command=lambda: cerrar_ventana(frame, tabs)).pack()
 
-    #retornamos el nombre que tendra la ventana
+    # retornamos el nombre que tendra la ventana
     return "Crear Simulación"
 
 def ventana_simulador(Frame:tk.Frame, tabs:ttk.Notebook) -> None:

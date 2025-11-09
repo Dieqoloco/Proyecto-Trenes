@@ -16,11 +16,14 @@ def configurar_hora(h, m, s):
     segundo = s
 
 """
-def validar_y_guardar_hora(horas:int, minutos:int, segundos:int):
+def validar_y_guardar_hora(horas:tk.Entry, minutos:tk.Entry, segundos:tk.Entry):
     """ Esta funcion se encarga de validar que los numeros ingresados esten correctos"""
 
     #Confirmaremos que los valores sean numeros que se puedan convertir en enteros
     try:
+        h = horas.get()
+        m = minutos.get()
+        s = segundos.get()
         h = int(h)
         m = int(m)
         s = int(s)
@@ -28,7 +31,7 @@ def validar_y_guardar_hora(horas:int, minutos:int, segundos:int):
         return False
     
     #Confirmaremos que los numeros 
-    if 0 <= horas < 24 and 0 <= minutos < 60 and 0 <= segundos < 60:
+    if 0 <= h < 24 and 0 <= m < 60 and 0 <= s < 60:
         return True
 
     return False
