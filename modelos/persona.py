@@ -8,8 +8,8 @@ class Persona:
 
     def subir_tren(self, tren):
         self.estado = "viajando"
-        print(f"👥 Persona {self.id_persona} sube al tren {tren.nombre}.")
+        print(f"Persona {self.id_persona} sube al tren {tren.nombre}.")
 
     def bajar_tren(self, estacion):
         self.estado = "llegado"
-        print(f"✅ Persona {self.id_persona} bajó en {estacion.nombre}.")
+        print(f"Persona {self.id_persona} bajó en {estacion.nombre}.")
