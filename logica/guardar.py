@@ -9,14 +9,15 @@ def crear_carpeta(nombre:str) -> None:
         if nombre == "":
             nombre = "Nueva_Simulacion"
 
-    # buscara la carpeta simulaciones y considerara la carpeta con nombre
+        # buscara la carpeta simulaciones y considerara la carpeta con nombre
         carpeta_destino = os.path.join("simulaciones", nombre) #
 
-    # el bucle evitara errores por nombres duplicados
+        # el bucle evitara errores por nombres duplicados
         contador = 0
         while os.path.exists(carpeta_destino):
             carpeta_destino = os.path.join("simulaciones", nombre + f"({contador})") 
-            contador += 1 
-            os.makedirs(carpeta_destino)
+            contador += 1
+
+        os.makedirs(carpeta_destino)
     except Exception as e:
             print("Error al guardar la simulación:", e)

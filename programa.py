@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 from config.configuraciones import titulo_ventana
-from interfaz.interfaz import interfaze, ventana_simulador, ventana_creacion_simulacion, crear_ventanas
+from interfaz.interfaz import interfaze
 
 def main():
     """Inicia el programa completo"""

@@ -21,7 +21,7 @@ def crear_ventanas(notebook:ttk.Notebook, funcion) -> None:
     notebook.select(nueva_ventana)
 
 
-def guardar_simulacion(nombre:str, frame: tk.Frame, tab: ttk.Notebook) -> None:
+def guardar_simulacion(nombre:tk.Entry, frame: tk.Frame, tab: ttk.Notebook) -> None:
     """Esta funcion guardara la nueva simulación"""
 
     # esta funcion creara la carpeta en la que se guardaran los datos de la simulación

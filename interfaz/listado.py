@@ -51,6 +51,8 @@ def ventana_listado_simulaciones(frame: tk.Frame, tab:ttk.Notebook) -> str:
     #creamos un boton de cancelar en caso de no querer hacer nada con las simulaciones
     tk.Button(frame, text="Cancelar", command=lambda: cerrar_ventana(frame, tab)).pack()
 
+    print(diccionario)
+
     return "Listado"
 
 def contenedor_de_simulaciones(nombre, ventana, tab, frame):
@@ -72,7 +74,7 @@ def contenedor_de_simulaciones(nombre, ventana, tab, frame):
 def alerta_eliminacion(nombre:str, frame:tk.Frame, tab:ttk.Notebook):
     """Esta funcion saltara un mensaje confirmando que queremos eliminar la simulacion,
     en caso de que querramos eliminar la simulacion, lo hara y 'refrezcara' el tab"""
-    
+
     if msgbox.askyesno("Eliminar", f"Seguro que desea elminar '{nombre}', por siempre y para siempre?"):
         eliminar_carpeta(nombre)
         cerrar_ventana(frame, tab)

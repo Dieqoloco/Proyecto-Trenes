@@ -1,6 +1,8 @@
 from tkinter import messagebox, Toplevel, Label
 import tkinter as tk
 
+
+"""
 hora = 0
 minuto = 0
 segundo = 0
@@ -13,17 +15,20 @@ def configurar_hora(h, m, s):
     minuto = m
     segundo = s
 
+"""
+def validar_y_guardar_hora(horas:int, minutos:int, segundos:int):
+    """ Esta funcion se encarga de validar que los numeros ingresados esten correctos"""
 
-def validar_y_guardar_hora(h, m, s):
+    #Confirmaremos que los valores sean numeros que se puedan convertir en enteros
     try:
         h = int(h)
         m = int(m)
         s = int(s)
     except ValueError:
         return False
-
-    if 0 <= h < 24 and 0 <= m < 60 and 0 <= s < 60:
-        configurar_hora(h, m, s)
+    
+    #Confirmaremos que los numeros 
+    if 0 <= horas < 24 and 0 <= minutos < 60 and 0 <= segundos < 60:
         return True
 
     return False
