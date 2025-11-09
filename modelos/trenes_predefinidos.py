@@ -1,4 +1,4 @@
-from entidades.tren import Tren
+from trenes import Tren
 from rutas_predefinidas import ruta_sur, ruta_norte
 
 # Tren 1: BMU Bimodal
