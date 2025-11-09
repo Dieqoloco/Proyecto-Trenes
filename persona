@@ -1,0 +1,15 @@
+class Persona:
+    def __init__(self, id_persona: int, origen, destino):
+        self.id_persona = id_persona
+        self.origen = origen
+        self.destino = destino
+        self.estado = "esperando"
+        self.tiempo_espera = 0
+
+    def subir_tren(self, tren):
+        self.estado = "viajando"
+        print(f"👥 Persona {self.id_persona} sube al tren {tren.nombre}.")
+
+    def bajar_tren(self, estacion):
+        self.estado = "llegado"
+        print(f"✅ Persona {self.id_persona} bajó en {estacion.nombre}.")
