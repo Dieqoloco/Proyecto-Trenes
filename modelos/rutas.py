@@ -1,0 +1,15 @@
+class Ruta:
+    def __init__(self, id_ruta: str, vias: list, estaciones: list):
+        self.id_ruta = id_ruta
+        self.vias = vias
+        self.estaciones = estaciones
+
+    def distancia_total(self):
+        return sum(v.longitud for v in self.vias)
+
+    def obtener_siguiente_estacion(self, estacion_actual):
+        try:
+            index = self.estaciones.index(estacion_actual)
+            return self.estaciones[index + 1]
+        except (ValueError, IndexError):
+            return None
