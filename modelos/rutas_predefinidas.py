@@ -1,6 +1,6 @@
 from estacion import Estacion
-from entidades.via import Via
-from entidades.ruta import Ruta
+from via import Via
+from modelos.rutas import Ruta
 
 # === Estaciones ===
 est_central = Estacion("Estación Central (Santiago)", 8242459)

@@ -1,4 +1,4 @@
-#from entidades.ruta import Ruta
+from rutas import Ruta
 
 class Tren:
     def __init__(self, nombre: str, velocidad: int, cantidad_vagones: int, ruta: Ruta):
@@ -10,13 +10,13 @@ class Tren:
         self.accion_actual = "en estación"
 
     def mover(self):
-        print(f"🚆 {self.nombre} se mueve por la ruta {self.ruta.id_ruta} a {self.velocidad} km/h.")
+        print(f"{self.nombre} se mueve por la ruta {self.ruta.id_ruta} a {self.velocidad} km/h.")
         self.accion_actual = "en movimiento"
 
     def subir_personas(self, cantidad: int):
         self.pasajeros_actuales += cantidad
-        print(f"👥 {cantidad} personas subieron al {self.nombre}.")
+        print(f"{cantidad} personas subieron al {self.nombre}.")
 
     def bajar_personas(self, cantidad: int):
         self.pasajeros_actuales = max(0, self.pasajeros_actuales - cantidad)
-        print(f"🚉 {cantidad} personas bajaron del {self.nombre}.")
+        print(f"{cantidad} personas bajaron del {self.nombre}.")

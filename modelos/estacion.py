@@ -10,11 +10,11 @@ class Estacion:
         self.vias_conectadas.append(via)
 
     def llegada_tren(self, tren):
-        print(f"🚉 El tren {tren.nombre} ha llegado a {self.nombre}.")
+        print(f"El tren {tren.nombre} ha llegado a {self.nombre}.")
 
     def salida_tren(self, tren):
-        print(f"🛤️ El tren {tren.nombre} ha salido de {self.nombre}.")
+        print(f"El tren {tren.nombre} ha salido de {self.nombre}.")
 
     def agregar_persona(self, persona):
         self.personas_esperando.append(persona)
-        print(f"👤 La persona {persona.id_persona} espera en {self.nombre}.")
+        print(f"La persona {persona.id_persona} espera en {self.nombre}.")
