@@ -1,2 +1,2 @@
-escala_ventana = "800x600"
+#Configuraciones
 titulo_ventana = "Simulador"
