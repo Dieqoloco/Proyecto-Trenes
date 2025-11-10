@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox as msgbox
 from .funciones import cerrar_ventana,crear_ventanas
-from logica.cargar import carpetas_en, eliminar_carpeta
+from logica.cargarguardar import carpetas_en, eliminar_carpeta
 
 def ventana_listado_simulaciones(frame: tk.Frame, tab:ttk.Notebook) -> str:
     """Esta funcion creara la ventana que muestra la lista de simulaciones"""
