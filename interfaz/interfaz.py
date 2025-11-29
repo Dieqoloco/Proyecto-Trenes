@@ -45,7 +45,7 @@ def ventana_creacion_simulacion(frame:tk.Frame, tabs: ttk.Notebook) -> str:
 
     # Este boton guardara la simulación
     tk.Button(frame, text="Guardar", 
-              command=lambda: guardar_simulacion(nombre, frame, tabs, hora, minutos, segundos)).pack()   
+              command=lambda: guardar_simulacion(nombre, frame, tabs, hora, minutos, segundos, rutas_guardadas)).pack()   
     
     # este boton cancelara el proceso y cerrara la ventana
     tk.Button(frame, text="Cancelar", command=lambda: cerrar_ventana(frame, tabs)).pack()

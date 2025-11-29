@@ -40,7 +40,8 @@ def eliminar_carpeta(nombre:str):
     
 
 def crear_carpeta(nombre:str) -> str:
-    """ Esta función servira para crear las carpetas con los datos de las simulaciones """
+    """ Esta función servira para crear las carpetas con los datos de 
+    las simulaciones y retornara la direccion de la misma """
     "Si la carpeta no tiene nombre se guardara como 'Nueva simulación'"
     try:
         if not nombre.strip(): 
@@ -89,7 +90,7 @@ def escribir_archivo_csv(ruta:str, datos:list[list]):
     """ Esta funcion se encargara de escribir los datos en la direccion que le hallamos pasado """
     with open(ruta, "w") as archivo:
         for fila in datos:
-            linea = "j".join(map(str, fila))
+            linea = ";".join(map(str, fila))
             archivo.write(linea +"\n")
 
 #carpeta = crear_carpeta("hola")

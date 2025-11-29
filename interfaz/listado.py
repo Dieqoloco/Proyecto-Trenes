@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox as msgbox
 from .funciones import cerrar_ventana,crear_ventanas
 from logica.cargarguardar import carpetas_en, eliminar_carpeta
+from .simulacion import desplegarVentanaSimulacion
 
 def ventana_listado_simulaciones(frame: tk.Frame, tab:ttk.Notebook) -> str:
     """Esta funcion creara la ventana que muestra la lista de simulaciones"""
@@ -66,7 +67,8 @@ def contenedor_de_simulaciones(nombre, ventana, tab, frame):
     botones.pack()
 
     #creamos los botones
-    tk.Button(botones, text="Empezar").grid(row=0, column=1)
+    tk.Button(botones, text="Empezar",
+              command = lambda: desplegarVentanaSimulacion(ventana)).grid(row=0, column=1)
     tk.Button(botones, text="Modificar").grid(row=0, column=2)
     tk.Button(botones, text="Eliminar", 
               command = lambda: alerta_eliminacion(nombre, frame,tab)).grid(row=0, column=3)
