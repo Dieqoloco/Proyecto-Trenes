@@ -5,6 +5,9 @@ class Estacion:
         self.vias_conectadas = []
         self.personas_esperando = []
         self.flujo_personas = 0
+        self.horario_apertura_estacion = 7 
+        self.horario_cierre_estacion = 20
+
 
     def agregar_via(self, via):
         self.vias_conectadas.append(via)
@@ -18,3 +21,7 @@ class Estacion:
     def agregar_persona(self, persona):
         self.personas_esperando.append(persona)
         print(f"La persona {persona.id_persona} espera en {self.nombre}.")
+
+    def apertura_cierre(self, estacion):
+        print(f"El horario de apertura de la estación {estacion} es a las {self.horario_apertura_estacion} hrs")
+        print(f"El horario de cierre de la estación {estacion} es a las {self.horario_cierre_estacion} hrs")
