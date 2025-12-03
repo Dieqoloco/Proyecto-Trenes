@@ -26,7 +26,8 @@ Existen 2 situaciones de escrituras y lectura de datos, la lectura estática, en
 ## Como empezar
 
 * 1.- crear una carpeta donde guardar el repositorio
-* 2.- posicionarse dentro de esa carpeta en el terminal **cd mi_carpeta**
-* 3.- escribir git clone https://github.com/Dieqoloco/INFO081-11-ProyectoTrenes.git
-* 4.- escribir cd INFO081-11-ProyectoTrenes
-* 5.- escribir python programa.py
+* 2.- abrir una terminal
+* 3.- posicionarse dentro de esa carpeta en el terminal **cd mi_carpeta**
+* 4.- escribir git clone https://github.com/Dieqoloco/INFO081-11-ProyectoTrenes.git
+* 5.- escribir cd INFO081-11-ProyectoTrenes
+* 6.- escribir python programa.py
