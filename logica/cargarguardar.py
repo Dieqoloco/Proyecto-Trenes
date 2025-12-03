@@ -89,7 +89,10 @@ def leer_archivo(ruta:str) -> list[str]:
 def escribir_archivo_csv(ruta:str, datos:list[list]):
     """ Esta funcion se encargara de escribir los datos en la direccion que le hallamos pasado """
     with open(ruta, "w") as archivo:
+        contador = 0
         for fila in datos:
+            contador += 1
+            archivo.write(f"Ruta{contador}:;")
             linea = ";".join(map(str, fila))
             archivo.write(linea +"\n")
 
